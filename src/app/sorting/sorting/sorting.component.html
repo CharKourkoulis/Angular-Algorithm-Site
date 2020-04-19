@@ -1,0 +1,21 @@
+
+
+<div class="ui grid">
+  <div class="two wide column">
+    <div class="ui vertical fluid tabular menu">
+      <a class="item" routerLink = "./" routerLinkActive= "active" [routerLinkActiveOptions]= "{exact: true}">General</a>
+      <a class="item" routerLink = "./bubblesort" routerLinkActive = "active">Bubble Sort</a>
+      <a class="item" routerLink = "./mergesort" routerLinkActive = "active">Merge Sort</a>
+      <a class="item" routerLink = "./selectionsort" routerLinkActive = "active">Selection Sort</a>
+      <a class="item" routerLink = "./insertionsort" routerLinkActive = "active">Insertion Sort</a>
+      <a class="item" routerLink = "./countsort" routerLinkActive = "active">Count Sort</a>
+    </div>
+  </div>
+
+  <div class="fourteen wide stretched column">
+      <div class="ui grid container" style="margin-top: 4%;">
+        <router-outlet></router-outlet>
+      </div>
+  </div>
+
+</div>
